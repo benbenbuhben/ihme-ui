@@ -93,6 +93,7 @@
     "interact.js": "~1.2",
     "lodash": "~4.5",
     "react": "~15.6",
+    "react-addons-shallow-compare": "~15.6",
     "react-dom": "~15.6",
     "react-virtualized": "~7.24",
     "topojson": "~1.6"
