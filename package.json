@@ -95,6 +95,7 @@
     "react": "~15.6",
     "react-addons-shallow-compare": "~15.6",
     "react-dom": "~15.6",
+    "react-test-renderer": "^16.0.0",
     "react-virtualized": "~7.24",
     "topojson": "~1.6"
   }
