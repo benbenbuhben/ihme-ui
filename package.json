@@ -80,6 +80,7 @@
     "postcss-loader": "~1.2",
     "react-addons-test-utils": "~15.0",
     "react-docgen": "~2.13",
+    "react-test-renderer": "~15.6",
     "sinon": "^2.4.1",
     "style-loader": "~0.17",
     "webpack": "~2.2",
