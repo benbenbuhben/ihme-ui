@@ -9,7 +9,6 @@ import {
   CommonDefaultProps,
   CommonPropTypes,
   propResolver,
-  PureComponent,
 } from '../../../utils';
 
 /**
@@ -20,7 +19,7 @@ import {
  * are provided, which can be helpful, for example, for showing uncertainty around an estimate represented
  * by a line.
  */
-export default class MultiLine extends PureComponent {
+export default class MultiLine extends React.PureComponent {
   render() {
     const {
       areaClassName,

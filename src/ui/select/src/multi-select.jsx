@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Select, { propTypes as baseProps } from 'ihme-react-select';
 import { assign } from 'lodash';
 
-import { stateFromPropUpdates, propsChanged, PureComponent } from '../../../utils';
+import { stateFromPropUpdates, propsChanged } from '../../../utils';
 import { FLIP_MENU_UPWARDS_INLINE_STYLE, getWidestLabel } from './utils';
 
 import style from './select.css';
@@ -11,11 +11,11 @@ import { menuWrapper } from './menu';
 import Value from './value';
 import multiValueRenderer from './multi-value-renderer';
 
-export default class MultiSelect extends PureComponent {
+export default class MultiSelect extends React.PureComponent {
   constructor(props) {
     super(props);
     console.warn(
-      `Deprecated: MultiSelect will not be available in future versions. 
+      `Deprecated: MultiSelect will not be available in future versions.
       Please use Select with prop "multi".`
     );
     this.state = stateFromPropUpdates(MultiSelect.propUpdates, {}, props, {});

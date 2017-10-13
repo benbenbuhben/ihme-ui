@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 import map from 'lodash/map';
-import { CommonPropTypes, PureComponent } from '../../../utils';
+import { CommonPropTypes } from '../../../utils';
 
 import style from './slider.css';
 
-export default class Ticks extends PureComponent {
+export default class Ticks extends React.PureComponent {
   render() {
     return (
       <svg

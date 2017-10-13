@@ -4,7 +4,6 @@ import assign from 'lodash/assign';
 
 import {
   CommonPropTypes,
-  PureComponent,
   combineStyles,
   memoizeByLastCall,
   propsChanged,
@@ -17,7 +16,7 @@ import LoadingIndicator from '../../loading-indicator';
 /**
  * `import { Button } from 'ihme-ui'`
  */
-export default class Button extends PureComponent {
+export default class Button extends React.PureComponent {
   constructor(props) {
     super(props);
 

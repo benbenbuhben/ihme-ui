@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 import classNames from 'classnames';
 import {
   assign,
@@ -30,6 +29,7 @@ import {
   propResolver,
   stateFromPropUpdates,
   colorSteps as defaultColorSteps,
+  shouldPureComponentUpdate,
 } from '../../../../utils';
 
 import styles from './style.css';
@@ -101,8 +101,10 @@ export default class Map extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     // only update if data is not being currently loaded,
     // and when props have changed,
-    return !nextProps.loading
-            && PureRenderMixin.shouldComponentUpdate.call(this, nextProps, nextState);
+    return (
+      !nextProps.loading
+      && shouldPureComponentUpdate(this.props, this.state, nextProps, nextState)
+    );
   }
 
   onSetScale() {
