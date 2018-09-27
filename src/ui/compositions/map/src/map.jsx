@@ -15,8 +15,6 @@ import {
   map,
   toString,
 } from 'lodash';
-
-
 import { scaleLinear } from 'd3';
 import Button from '../../../button';
 import Choropleth from '../../../choropleth';
